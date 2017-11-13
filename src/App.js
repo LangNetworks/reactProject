@@ -29,11 +29,16 @@ const businesses = [
 ];
 
 class App extends React.Component {
+//Ravenous III: step 16 - 18
+searchYelp(term, location, sortBy) {
+  console.log(`Search Yelp with ${term}, ${location}, ${sortBy} `);
+}
+
   render() {
     return (<div className="App">
   <h1>ravenous</h1>
   <SearchBar />
-  <BusinessList businesses={[businesses]}/>
+  <BusinessList businesses={businesses}/>
   </div>
 );
   }
